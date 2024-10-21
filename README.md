@@ -8,7 +8,7 @@
 
 Uma versão resumida e/ou inspirada no [blade-ui-kit/blade-icons](https://blade-ui-kit.com/blade-icons)
 
-Os ícones que temos, são:
+Os sets de ícones que temos, são:
 
 https://tabler.io/icons
 
