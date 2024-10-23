@@ -15,6 +15,15 @@ class CommandServiceProvider extends ServiceProvider
 
         $this->commands([
             CacheCommand::class,
+            // TODO: create a clear command
         ]);
+
+        if (method_exists($this, 'optimizes')) {
+            $this->optimizes(
+                'admix:icons-cache',
+                'cache:clear', // TODO: create a clear command
+                'admix-icons'
+            );
+        }
     }
 }

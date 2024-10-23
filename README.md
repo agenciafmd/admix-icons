@@ -24,11 +24,11 @@ composer require agenciafmd/admix-icons:v11.x-dev
 
 Usamos blade-components para renderizar os ícones.
 
-Usamos o prefixo `tl` para o `tabler` e `bs` para `bootstrap`.
+Usamos o prefixo `tblr` para o `tabler` e `bs` para `bootstrap`.
 
 ```html
 
-<x-tl-icon name="activity"/>
+<x-tblr-icon name="activity"/>
 
 <x-bs-icon name="activity"/>
 ``` 
@@ -37,12 +37,12 @@ Se necessário, você pode passar classes/atributos adicionais para o ícone:
 
 ```html
 
-<x-tl-icon name="activity" class="text-primary" fill="currentColor"/>
+<x-tblr-icon name="activity" class="text-primary" fill="currentColor"/>
 ```
 
 ## Customização
 
-Caso você tenha um set de icones e queira adicionar ao pacote, você pode fazer isso.
+Caso você tenha um set de ícones e queira adicionar ao pacote, você pode fazer isso.
 
 Publique o arquivo de configuração:
 
@@ -62,4 +62,4 @@ E adicione o caminho do seu set de ícones no arquivo `config/admix-icons.php`:
 ...
 ```
 
-> É importante que os icones sejam todos em svg e estejam na raiz da pasta.
+> É importante que os ícones sejam todos em svg e estejam na raiz da pasta.

@@ -9,7 +9,7 @@ return [
         ],
         [
             'name' => 'Tabler Icons',
-            'prefix' => 'tl',
+            'prefix' => 'tblr',
             'path' => 'vendor/agenciafmd/admix-icons/resources/tabler-icons',
         ],
     ]
