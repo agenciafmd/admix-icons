@@ -49,10 +49,11 @@ class Icon
                         </svg>';
             }
 
-            return str($svg)
-                ->squish()
-                ->replace('> <', '><')
-                ->__toString();
+            return '<svg ' . str($svg)
+                    ->after('<svg')
+                    ->squish()
+                    ->replace('> <', '><')
+                    ->__toString();
         });
 
         return $this;
