@@ -9,7 +9,7 @@ class IconServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->bootProviders();
-        $this->publish();
+        $this->bootPublish();
     }
 
     public function register(): void
@@ -23,7 +23,7 @@ class IconServiceProvider extends ServiceProvider
         $this->app->register(CommandServiceProvider::class);
     }
 
-    private function publish(): void
+    private function bootPublish(): void
     {
         $this->publishes([
             __DIR__ . '/../../config/admix-icons.php' => base_path('config/admix-icons.php'),
