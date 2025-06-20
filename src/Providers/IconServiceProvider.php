@@ -26,6 +26,10 @@ class IconServiceProvider extends ServiceProvider
     private function bootPublish(): void
     {
         $this->publishes([
+            __DIR__ . '/../../resources/bootstrap-icons' => public_path('vendor/admix-ui/vendor/libs/bootstrap-icons'),
+        ], ['admix-ui:assets']);
+
+        $this->publishes([
             __DIR__ . '/../../config/admix-icons.php' => base_path('config/admix-icons.php'),
         ], ['admix-icons:config']);
     }
