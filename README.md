@@ -17,7 +17,7 @@ https://icons.getbootstrap.com/
 ## Instalação
 
 ```bash
-composer require agenciafmd/admix-icons:v11.x-dev
+composer require agenciafmd/admix-icons:v12.x-dev
 ```
 
 ## Uso
